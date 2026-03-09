@@ -1,0 +1,11 @@
+# Создайте папку для workflows
+mkdir -p .github/workflows
+
+# Создайте файл
+touch .github/workflows/deploy-znachkov.yml
+
+# Откройте его в редакторе и вставьте код
+# Затем сохраните и запушьте:
+git add .github/workflows/deploy-znachkov.yml
+git commit -m "Add deploy workflow for znachkov.ru"
+git push
