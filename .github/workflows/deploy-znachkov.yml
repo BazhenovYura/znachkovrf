@@ -26,11 +26,6 @@ jobs:
           echo "📁 Содержимое папки out после сборки:"
           ls -la out/ || echo "❌ Папка out не создалась! Проверьте next.config.mjs"
           
-      - name: Install AWS CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y awscli
-          
       - name: Deploy to Yandex Cloud Storage
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
